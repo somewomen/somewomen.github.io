@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <h1>{{title}}</h1>
+      <ul>
+	{% for det in details %}
+	{% if det.status > 0 %}
+	<li><em><a href ='{{ det.url }}'>{{ det.title }}</a></em>
+	  <br> {{det.source}}
+	  <small>(<strong>{{det.author}}</strong>,
+	    {{det.date}})</small>
+	</li>
+	{% endif %}
+	{% endfor %}
+      </ul>
+    </div>
+{% endblock %}

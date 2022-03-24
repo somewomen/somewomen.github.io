@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+      <div class="container">
+
+	<h2>Synopsis</h2>
+	<p>Everybody feels ashamed about something they did at
+	  some time. But what do you do if the thing you’re ashamed
+	  of is being you? A transgender woman director confronts
+	  stigma the way a filmmaker knows how: by turning the
+	  camera on herself.
+	</p>
+	<p>Written and directed by Quen Wong.
+	<p>Executive producer Glenn Goei, Tiger Tiger Productions.
+	  <div class="row videowrapper">
+	  <iframe src="https://www.youtube.com/embed/tlVdBetkZis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	</div>
+ <div class="row">
+   <div class="col">
+     	<a href="{{ url_for('static', 
+		 filename="img/stills/Film stills 1 Some Women by Quen Wong (courtesy of Tiger Tiger Pictures).jpg")}}">
+	  <img src ="{{ url_for('static', filename='img/stills/tn-1.jpg') }}"
+	  class = "img-fluid" /></a>
+   </div>
+      <div class="col">
+ 	<a href="{{ url_for('static', filename="img/stills/Film stills 3 Some Women by Quen Wong (courtesy of Tiger Tiger Pictures).jpg")}}">
+	  <img src ="{{ url_for('static', filename='img/stills/tn-3.jpg') }}"
+       class = "img-fluid" /></a>
+      </div>
+ </div>
+ <br>
+ <div class="row">
+    
+      <div class="col">
+	<a href="{{ url_for('static', filename="img/stills/Film stills 4 Some Women by Quen Wong (courtesy of Tiger Tiger Pictures).jpg")}}">
+	  <img src ="{{ url_for('static', filename='img/stills/tn-4.jpg') }}"
+        class = "img-fluid" /></a>
+      </div>
+      <div class="col">
+		<a href="{{ url_for('static', filename="img/stills/Film stills 5 Some Women by Quen Wong (courtesy of Tiger Tiger Pictures).jpg")}}">
+	<img src ="{{ url_for('static', filename='img/stills/tn-5.jpg') }}"
+	 class = "img-fluid" /></a>
+      </div>
+ </div>
+
+  
+</div>
+
+
+      
+    </div>
+{% endblock %}

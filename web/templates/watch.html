@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <h2>Now showing</h2>
+      <ul>
+	<li><a href='https://www.gv.com.sg/GVMovieDetails#/movie/3087/cinema/15C'>Get
+	tickets @ Golden Village</a>  Gemini Funan, GV Funan, GV VivoCity
+	<li><a href='https://bit.ly/SomeWomenTPGM'>Get
+	tickets @ The Projector</a> Golden Mile, Riverside Point
+      </ul>
+      <hr>
+      <h2>Past Screenings</h2>
+      <ul>
+	<li>2022-03-19 <small>(SOLD OUT)</small>
+	  <br> The Projector, Singapore —  with post-screening Q&amp;A
+	  <br> AWARE's <i>Break Free!</i>  International Women's Day Celebration 
+	
+	<li>2022-03-12 <small>(SOLD OUT)</small>
+	  <br> The Projector, Singapore 
+	<li>2022-03-08 <small>(SOLD OUT)</small>
+	    <br> The Projector, Singapore — with post-screening Q&amp;A
+	    <br>Opening film of
+	    the <a href="https://theprojector.sg/themes/women-make-film-festival-2022/">Women Make Film Festival 2022</a>
+	<li>2021-12-05 <small>(SOLD OUT)</small>
+	    <br><a href='https://sgiff.com/films/some-women/'>Singapore
+	      International Film Festival</a>
+	    <br>Audience Choice Award Encore Screening 
+	<li>2021-12-04 <small>(SOLD OUT)</small>
+	    <br><a href='https://sgiff.com/films/some-women/'>Singapore
+	    International Film Festival</a> (World Premiere) —  with post-screening Q&A
+      </ul>
+    </div>
+{% endblock %}

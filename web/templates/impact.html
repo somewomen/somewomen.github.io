@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+      <h3>Singapore Resources</h3>
+      <ul>
+	<li><a href="https://transgendersg.com/">Transgender SG</a>
+	<li><a href="https://www.thetprojectsg.org/">The T Project</a>
+	<li><a href="https://transbefrienders.com/">TransBefrienders</a>
+      </ul>
+
+      <h3>Other helpful resources</h3>
+      <ul>
+
+	
+	<li><a href="https://weareaptn.org/">Asia Pacific Transgender Network</a>
+	<li><a href='https://pinkmantaray.com/'>pinkmantaray</a>
+	<li><a href="https://www.juliaserano.com/">julia serano</a>
+	<li><a href="https://ai.eecs.umich.edu/people/conway/conway.html">Lynn Conway</a>
+      </ul>
+
+      <p>These are not comprehensive lists, just a few pages that are
+      useful/interesting/inspiring.
+
+	<h3>Some Women elsewhere</h3>
+	<ul>
+	  <li><a href="https://the-singapore-lgbt-encyclopaedia.fandom.com/wiki/Some_Women">
+The Singapore LGBT encyclopaedia Wiki</a> (Roy Tan)
+	</ul>
+	
+    </div>
+{% endblock %}

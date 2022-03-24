@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <h1>{{title}}</h1>
+      <ul>
+	<li>Written and Directed by Quen Wong 
+	<li>Featuring Quen Wong, Sanisa, Lune Loh, Francis Bond, Dominic Wong, June Chua, Amy Tashiana, Judy Chia  
+	<li>Cinematographer &amp; Editor: Looi Wan Ping
+	<li>Producer &amp; Location Sound: Ziq Low
+	<li>Additional Camera: Damien Goh
+	<li>Original Music: August Lum
+	<li>Audio Post Production: Cheng Lijie
+	<li>Colourist: Junbin Chen, CSI
+	<li>Graphic Design: CROP
+	<li>Executive Producer: Glen Goei
+	<li>Production Company: Tiger Tiger Pictures
+      </ul>
+      <hr>
+      <ul>
+	<li>Webpage by Francis Bond and Quen Wong
+      <li>Transgender icon
+  by <a href="https://www.flaticon.com/free-icons/transgender"
+  title="transgender icons">Ecelop - Flaticon</a>
+	  
+
+    </div>
+{% endblock %}

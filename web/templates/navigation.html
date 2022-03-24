@@ -1,0 +1,31 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><img src="{{
+						   url_for('static',
+						   filename='img/logo.jpg')
+						   }}"
+					      height='48pt'
+					      alt="Some Women">
+	</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+	      {% for pg in nav %}
+	      {% if pg == 'watch' %}
+	      <button type="button" class="btn
+	      btn-outline-warning"><a href='{{ url_for('show',
+	      page='watch') }}'>Watch the Film</a></button>
+	      {% else %}
+	      <a href="{{ url_for('show', page=pg) }}"
+		 class="nav-item nav-link{% if page == pg %} active{%
+		 endif %}">{{ nav[pg]['name'] }}</a>
+	      {% endif %}
+	      {% endfor %}
+	    </div>
+	</div>
+      </div>
+  </nav>
+</header>
