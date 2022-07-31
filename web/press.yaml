@@ -7,8 +7,35 @@
 #   title: 
 #   url:
 
+- author: Abigail Yartey
+  blurb: ''
+  date: '2022-07-20'
+  img: ''
+  source: AZ Magazine
+  status: 1
+  title: 'Film Review: Some Women'
+  url: https://azmagazine.co.uk/film-review-some-women/
 
-
+- author: Ramon Pascual Sanchez
+  blurb: ''
+  date: '2022-07-05'
+  img: ''
+  source: Blueberry
+  status: 1
+  title: Meet the documentaries that made our time at Sheffield Doc Fest
+  url: >
+    https://blueberrycreatives.co.uk/docs-that-made-our-time-at-sheffield-doc-fest/
+  
+- author: Katie Goh
+  blurb: ''
+  date: '2022-06-30'
+  img: ''
+  source: i-D
+  status: 1
+  title: 10 powerful new documentaries you need to watch
+  url: >
+    https://i-d.vice.com/en_uk/article/g5vbd7/10-powerful-new-documentaries-you-need-to-watch
+  
 - author: John Lui
   blurb: ''
   date: '2022-03-24'
