@@ -15,10 +15,14 @@ current_directory = os.path.abspath(os.path.dirname(__file__))
 nav = {
     'index': {"name":"About",
              'desc':""},
+    # 'laurel': {"name": "Laurels",
+    #          'desc':'Laurels'},
     'team': {"name":"Team",
              'desc':""},
     'press': {"name": "Press",
              'desc':''},
+    'blurb': {"name": "What People are Saying",
+              'desc':''},
     'impact': {"name": "Resources & Impact",
              'desc':''},
     # 'presskit': {"name": "Press Kit",
@@ -72,6 +76,10 @@ def show(page):
         yaml_file= os.path.join(current_directory, 'press.yaml')
         with open(yaml_file, "r") as stream:
             details = yaml.safe_load(stream)
+    elif page == 'blurb':
+        yaml_file= os.path.join(current_directory, 'blurb.yaml')
+        with open(yaml_file, "r") as stream:
+            details = yaml.safe_load(stream)  
     else:
          details = []
          

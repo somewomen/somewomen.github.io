@@ -12,8 +12,12 @@
 	{% if det.status > 0 %}
 	<li><em><a href ='{{ det.url }}'>{{ det.title }}</a></em>
 	  <br> {{det.source}}
-	  <small>(<strong>{{det.author}}</strong>,
-	    {{det.date}})</small>
+	  <small>{%- if det.author %}(<strong>{{det.author}}</strong>,
+	    {{det.date}})
+	    {% else %}
+	    ({{det.date}})
+	    {%- endif %}
+	  </small>	    
 	</li>
 	{% endif %}
 	{% endfor %}
