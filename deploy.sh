@@ -1,14 +1,16 @@
 #!/bin/bash
 
+python=python3.9
+
 if [ -d ".venv" ]
 then
     source .venv/bin/activate
     pip install -r requirements.txt
-    python3 wsgi.py
+    $python wsgi.py
 else
-    python3 -m venv .venv
+    $python -m venv .venv
     source .venv/bin/activate
-    python3 -m pip install --upgrade pip
+    $python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python3 wsgi.py
+    $python wsgi.py
 fi
